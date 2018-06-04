@@ -1,0 +1,4 @@
+As we discussed earlier, every term will be a key in our dictionary, whose value is its postings list (the list of documents that the term appears in). However, we would like to keep one additional information in the postings list, the positions of term occurrences within the document. The reason is to answer the phrase queries we need positional information, because we want to check whether the terms in the query appear in the specified order. Without knowing the positions of the terms in the document, we can only check whether the query terms simply appear in a document. To verify the order, we need to know their positions. So for every occurrence of a term in a document, we will keep the occurrence position. For example, if we have the documents:
+Document 1: web retrieval web search information
+Document 2: search engine web ranking
+Document 3: web search course information search
