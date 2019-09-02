@@ -5,8 +5,6 @@ This project following the general idea of this [blog post](http://aakashjapi.co
 ## Search engines
 
 There are 3 major stages in developing a search engine:
-1) Finding/Crawling the Data
-2) Building the index
-3) Using the index to answer queries
-
-> On top of this, we can add result ranking (tf-idf, PageRank, etc), query/document classification and maybe some Machine Learning to keep track of user's past queries and selected results to improve the search engine's performance.
+1) Building the index
+2) Querying the index
+3) Result ranking - Implemented tf-idf ranking (term frequency - inverse document frequency) to order our documents,
